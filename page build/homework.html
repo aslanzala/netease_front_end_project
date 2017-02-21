@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>button</title>
+	<style>
+		.bt {
+			width: 50px;
+			height: 28px;
+			border: 1px solid #ddd;
+			background-color: #eee;
+			font:12px "宋体";
+			text-align: center;
+		}
+		
+		.dt {
+			height: 30px;
+			width: 80px;
+			background-color: white;
+			padding: 10px 10px 0 10px;
+			margin:0px;
+			border: 1px  solid #ddd;
+			text-align: center;
+		}
+
+		.dt1 {
+			height: 30px;
+			width: 80px;
+			background-color: white;
+			padding: 10px 10px 0 10px;
+			margin-top: 1px;
+			border: 1px solid #ddd;
+			text-align: center;
+		}
+		.dt:hover ,.dt1:hover{
+			background-color: #ddd;
+		}
+		.ct{display: none;}
+		.at:hover .ct{display: inline-block;}
+	</style>
+</head>
+<body>
+<div class="at">
+	<div>
+		<button class="bt" type="button">按钮</button>
+	</div>
+	<div class="ct">
+		<div class="dt1">下拉菜单</div>
+		<div class="dt">下拉菜单</div>
+		<div class="dt">下拉菜单</div>
+		<div class="dt">下拉菜单</div>
+	</div>
+</div>
+	
+<!-- 	考点：考察hover伪类使用
+		display:none;
+		:hover {display:block;}
+		考察margin,border,width,height,padding,font-size,font-family, -->
+</body>
+</html>
