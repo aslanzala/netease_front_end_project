@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>HMLT单元作业</title>
+    <style>
+    .table {
+        width: 540px;
+        border-collapse: collapse
+    }
+    
+    .table th,
+    .table td {
+        border: 1px solid #eaeaea;
+        padding: 10px 10px;
+        text-align: left
+    }
+    
+    .table th {
+        white-space: nowrap;
+        background: #f7f7f7;
+        color: #666;
+        font-weight: bold
+    }
+    </style>
+</head>
+
+<body>
+    <div>
+        图书畅销榜
+        <ol>
+            <a href="#">
+                <li title='当我足够好，才会遇见你'>当我足够好，才会遇见你</li>
+            </a>
+            <hr style="border:1px dotted #D4D4D4" />
+            <a href="">
+                <li>皮囊</li>
+            </a>
+            <hr style="border:1px dotted #D4D4D4" />
+            <a href="">
+                <li>李光耀论中国与世界</li>
+            </a>
+            <hr style="border:1px dotted #D4D4D4" />
+            <a href="">
+                <li>乖，摸摸头</li>
+            </a>
+            <hr style="border:1px dotted #D4D4D4" />
+            <a href="">
+                <li>男女内参</li>
+            </a>
+        </ol>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <table class="table">
+        <caption>
+            <b>运费详情</b>
+        </caption>
+        <thead>
+            <tr>
+                <th>区域</th>
+                <th>寄达地</th>
+                <th>首重(元/1000g)</th>
+                <th>续重(元/1000g)</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th rowspan="2">一区</th>
+                <td>浙江、上海、江苏</td>
+                <td>6</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <!-- <th>一区</th> -->
+                <!-- rowspan=2本质上是空间向下填充，如果原来的元素还在，则会被挤到右边 -->
+                <td>江西、安徽</td>
+                <td>7</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <th>二区</th>
+                <td>吉林、黑龙江、云南</td>
+                <td>10</td>
+                <td>6</td>
+            </tr>
+            <tr>
+                <th>三区</th>
+                <td>新疆、西藏</td>
+                <td>15</td>
+                <td>10</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <form action="">
+        <fieldset>
+            <div>
+                <label for="file">头像</label>
+                <input type="file">
+            </div>
+            <div>
+                <label for="name">昵称</label>
+                <input type="text">
+            </div>
+            <div>
+                <label for="degree">学历</label>
+                <select name="degree" id="degree">
+                    <option value="bachelor">本科</option>
+                    <option value="master">硕士</option>
+                </select>
+            </div>
+            <div>
+                <label for="sex">性别</label>
+                <input type="radio" name="sex" value="male">
+                <label for="male">男</label>
+                <input type="radio" name="sex" value="female">
+                <label for="female">女</label>
+            </div>
+            <div>
+                <label for="hobby">爱好</label>
+                <label for="movie">电影</label>
+                <input type="checkbox">
+                <label for="photograph">摄影</label>
+                <input type="checkbox">
+                <label for="music">音乐</label>
+                <input type="checkbox">
+                <label for="reader">阅读</label>
+                <input type="checkbox">
+            </div>
+            <div>
+                <label for="auotgraph">签名</label>
+                <textarea name="" id="" cols="30" rows="4"></textarea>
+            </div>
+            <div>
+                <button type="submit">保存</button>
+            </div>
+        </fieldset>
+    </form>
+</body>
+
+</html>
